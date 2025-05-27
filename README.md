@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-6479326-b31b1b.svg)](https://arxiv.org/abs/6479326)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg)](https://arxiv.org/abs/2505.19797)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 
