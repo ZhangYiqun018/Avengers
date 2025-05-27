@@ -1,0 +1,50 @@
+experiments:
+  task: task_name
+  max_workers: 8
+  mode: test
+  
+router:
+  type: straight  # options: straight, gpt_router, random_router, rank_router, elo_router, routerdc_router
+  gpt_router:
+    model: model_name
+    max_router: 2
+    base_url: your_base_url
+    api_key: your_api_key
+  straight_router:
+    model: model_name
+  random_router:
+    max_router: 2
+  rank_router:
+    centres_path: "path/to/centres.npy"
+    rankings_path: "path/to/rankings.json"
+    mapping_path: "path/to/mapping.json"
+    normalizer_path: "path/to/normalizer.joblib"
+    available_models:
+      - "model1"
+      - "model2"
+    top_n: 2
+    top_k: 2
+    beta: 6.0
+    default_rank: 999
+    embedding_model: embedding_model_name
+
+generator:
+  type: direct  # 可选: direct, self_consistency, model_switch, fast_slow, slow_fast, aggregation
+  direct:
+    temperature: 0.2
+    top_p: 1.0
+  self_consistency:
+    samples: 10
+    temperature: 0.7
+    top_p: 1.0
+    
+experts:
+  - name: model1_name
+    base_url: http://your.api.endpoint/v1
+    api_key: your_api_key
+    description: "the description of model1"
+  
+  - name: model2_name
+    base_url: http://your.api.endpoint/v1
+    api_key: your_api_key
+    description: "the description of model2" 

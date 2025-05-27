@@ -1,0 +1,18 @@
+base_config: config/experts.yaml
+save_dir: /path/to/save/results
+variations:
+  - name: experiment_name_1
+    params:
+      experiments.task: task1
+      router.type: straight
+      router.straight_router.model: model1
+      generator.type: direct
+
+  - name: experiment_name_2
+    params:
+      experiments.task: task2
+      router.type: random
+      router.random_router.models:
+        - model1
+        - model2
+      generator.type: self_consistency 

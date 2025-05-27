@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+nohup.out
+*.sqlite3
+*.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+*.ipynbresults/
+
+# Project specific
+results/
+analysis_results/
+config/temp/
+.cache/
+routerdc/
+train/
+
+# Data files
+*.txt
+*.xlsx
+data/LiveCodeBench/*.jsonl
+
+# Configuration and scripts
+*.yaml
+*.yml
+*.sh
+
+# Keep template files
+!config/*_template.yaml
+!scripts/*_template.sh
+diversity/result
+diversity/*.csv
+
+# 忽略所有数据集子文件夹
+data/AIME/
+data/EmoryNLP/
+data/FinQA/
+data/GPQA/
+data/HumanEval/
+data/K_and_K/
+data/LiveCodeBench/
+data/MATH500/
+data/MBPP/
+data/MMLUPro/
+data/MedQA/
+data/SimpleQA/
+data/arc_c/
+data/bbh/
+data/livemathbench/
+data/mathbench_v1/
+data/winogrande/
+
+# 保留README.md
+!data/README.md
