@@ -7,6 +7,7 @@
 <div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg)](https://arxiv.org/abs/2505.19797)
+[![Dataset](https://img.shields.io/badge/🤗-Dataset-ffce44)](https://huggingface.co/datasets/Estwld/Avengers)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 
@@ -111,7 +112,7 @@ Our method has been comprehensively evaluated across multiple categories:
 
 ## Dataset
 
-**Access to evaluation datasets**: [Google Drive](https://drive.google.com/drive/folders/1OkSxruoHSPvBCDWrMsKK1r81kK2CJrbv?usp=drive_link)
+**Access to evaluation datasets**: [Avengers on HuggingFace](https://huggingface.co/datasets/Estwld/Avengers)
 
 ## Citation
 
