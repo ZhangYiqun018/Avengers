@@ -15,8 +15,15 @@
 
 
 ## Abstract
+<div align="center">
+<img src="./assets/figure1.png" alt="Main Results" width="850">
+<p><em><strong>Figure 1:</strong> Comparison of proprietary models with our method (the Avengers) across six representative
+benchmarks. Full results on all 15 benchmarks are reported in Table 2</em></p>
+</div>
 
-The *Avengers* is a simple recipe that effectively leverages the *collective intelligence* of open-source, smaller language models. As of May 2025, with 10 open-source models (～7B parameters each), the *Avengers* collectively outperforms GPT-4.1 (OpenAI’s flagship model released on April 14, 2025) on 10 out of 15 representative datasets.
+The *Avengers* is a simple recipe that effectively leverages the *collective intelligence* of open-source, smaller language models. 
+Remarkably, **with 10 open-source models (∼7B parameters each), the Avengers surpasses GPT-4o, 4.1, and 4.5 in average performance across 15 diverse datasets spanning mathematics, coding, logical reasoning, general knowledge, and affective tasks**. 
+As of May 2025, with 10 open-source models (～7B parameters each), the *Avengers* collectively outperforms GPT-4.1 (OpenAI’s flagship model released on April 14, 2025) on 9 out of 15 representative datasets.
 
 ## Highlights
 
