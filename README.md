@@ -98,9 +98,31 @@ pip install -r requirements.txt
 
 ### Usage
 
+For detailed usage instructions, please refer to our comprehensive [Usage Guide](USAGE.md).
+
+**Quick Start:**
+
 ```bash
-# Usage instructions will be added after the paper is published
+# Clone the repository
+git clone https://github.com/ZhangYiqun018/Avengers.git
+cd Avengers
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure your models (copy and edit the template)
+cp config/experts_template.yaml config/my_config.yaml
+
+# Run a simple experiment
+python app.py --config config/my_config.yaml --save_dir results/
 ```
+
+**Key Features:**
+- Support for 15 evaluation benchmarks across 5 domains
+- Multiple routing strategies (straight, random, rank-based, GPT-based)
+- Various generation methods (direct, self-consistency, fast-slow)
+- Built-in HTTP caching for API optimization
+- Parallel processing support
 
 ## Evaluation Benchmarks
 
