@@ -76,3 +76,7 @@ data/winogrande/
 
 # 保留README.md
 !data/README.md
+
+core/ablation/legacy
+CLAUDE.md
+GEMINI.md

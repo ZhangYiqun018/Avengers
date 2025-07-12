@@ -143,6 +143,36 @@ Our method has been comprehensively evaluated across multiple categories:
 
 **Access to evaluation datasets**: [Avengers on HuggingFace](https://huggingface.co/datasets/Estwld/Avengers)
 
+## Implementation Details
+
+For researchers and developers interested in the technical implementation:
+
+### 🔧 Rank Router Implementation
+- **Automated Generation**: [`core/generate_rank_router.py`](core/generate_rank_router.py) - Complete pipeline for generating rank router artifacts
+- **Ablation Studies**: [`core/ablation_experiments.py`](core/ablation_experiments.py) - Comprehensive framework for ablation experiments
+- **Documentation**: 
+  - [English Documentation](core/README_rank_router_EN.md) - Detailed implementation guide
+  - [中文文档](core/README_rank_router_CN.md) - 详细实现指南
+
+### 🧪 Experimental Framework
+The `core/` directory contains the complete implementation of our clustering-based routing system, including:
+
+- **K-means sensitivity analysis** - Impact of cluster numbers on performance
+- **Clustering method comparison** - K-means vs. hierarchical vs. GMM vs. others
+- **Model selection strategies** - Automated selection of optimal model combinations
+- **Embedding model evaluation** - Support for multiple embedding models
+
+### 🚀 Quick Start for Developers
+```bash
+# Generate rank router configuration
+python core/generate_rank_router.py --data_path your_data.json --n_clusters 64
+
+# Run comprehensive ablation studies  
+python core/ablation_experiments.py --experiment all --data_path your_data.json
+```
+
+**Note**: All implementation preserves the core algorithmic logic described in our paper while providing production-ready code with comprehensive error handling, caching, and parallel processing support.
+
 ## Citation
 
 If you find our work useful for your research, please consider citing:
