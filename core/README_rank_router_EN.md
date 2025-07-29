@@ -299,16 +299,4 @@ We welcome contributions to improve the rank router implementation. Please feel 
 
 ## Citation
 
-If you use this rank router implementation in your research, please cite:
-
-```bibtex
-@misc{zhang2025avengerssimplerecipeuniting,
-      title={The Avengers: A Simple Recipe for Uniting Smaller Language Models to Challenge Proprietary Giants}, 
-      author={Yiqun Zhang and Hao Li and Chenxu Wang and Linyao Chen and Qiaosheng Zhang and Peng Ye and Shi Feng and Daling Wang and Zhen Wang and Xinrun Wang and Jia Xu and Lei Bai and Wanli Ouyang and Shuyue Hu},
-      year={2025},
-      eprint={2505.19797},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.19797}, 
-}
-```
+Citation information has been removed for anonymous review.

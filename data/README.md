@@ -1,1 +1,1 @@
-Data download link: https://huggingface.co/datasets/Estwld/Avengers
+Data download links have been removed for anonymous review. For reproduction, see `/core/rank/data_router_m22_complete.json` which contains 22 models' answer labels for different queries.

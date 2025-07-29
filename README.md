@@ -2,12 +2,10 @@
 <img src="./assets/overall.png" alt="Method Overview" width="900">
 </div>
 
-<h1 align="center">The Avengers: A Simple Recipe for Uniting Smaller Language Models to Challenge Proprietary Giants</h1>
+<h1 align="center">The Avengers: A Simple Routing-based Recipe for the Collective Intelligence of Smaller Language Models</h1>
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg)](https://arxiv.org/abs/2505.19797)
-[![Dataset](https://img.shields.io/badge/🤗-Dataset-ffce44)](https://huggingface.co/datasets/Estwld/Avengers)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 
@@ -89,7 +87,7 @@ As of May 2025, with 10 open-source models (～7B parameters each), the *Avenger
 
 ```bash
 # Clone the repository
-git clone https://github.com/ZhangYiqun018/Avengers.git
+git clone https://github.com/anonymous/Avengers.git
 cd Avengers
 
 # Install dependencies
@@ -104,7 +102,7 @@ For detailed usage instructions, please refer to our comprehensive [Usage Guide]
 
 ```bash
 # Clone the repository
-git clone https://github.com/ZhangYiqun018/Avengers.git
+git clone https://github.com/anonymous/Avengers.git
 cd Avengers
 
 # Install dependencies
@@ -141,7 +139,7 @@ Our method has been comprehensively evaluated across multiple categories:
 
 ## Dataset
 
-**Access to evaluation datasets**: [Avengers on HuggingFace](https://huggingface.co/datasets/Estwld/Avengers)
+Dataset links have been removed for anonymous review. For reproduction, we provide model answer labels in `/core/rank/data_router_m22_complete.json` containing 22 models' correct/incorrect answer labels for different queries to enable quick result reproduction.
 
 ## Implementation Details
 
@@ -175,20 +173,8 @@ python core/ablation_experiments.py --experiment all --data_path your_data.json
 
 ## Citation
 
-If you find our work useful for your research, please consider citing:
-
-```bibtex
-@misc{zhang2025avengerssimplerecipeuniting,
-      title={The Avengers: A Simple Recipe for Uniting Smaller Language Models to Challenge Proprietary Giants}, 
-      author={Yiqun Zhang and Hao Li and Chenxu Wang and Linyao Chen and Qiaosheng Zhang and Peng Ye and Shi Feng and Daling Wang and Zhen Wang and Xinrun Wang and Jia Xu and Lei Bai and Wanli Ouyang and Shuyue Hu},
-      year={2025},
-      eprint={2505.19797},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.19797}, 
-}
-```
+Citation information has been removed for anonymous review.
 
 ## Contact
 
-For questions or collaborations, please contact: [yiqunzhang@stumail.neu.edu.cn](mailto:yiqunzhang@stumail.neu.edu.cn) or [li.hao@mail.nwpu.edu.cn](mailto:li.hao@mail.nwpu.edu.cn)
+Contact information has been anonymized for review purposes.

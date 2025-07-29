@@ -299,16 +299,4 @@ experiments/
 
 ## 引用
 
-如果您在研究中使用了此 rank router 实现，请引用：
-
-```bibtex
-@misc{zhang2025avengerssimplerecipeuniting,
-      title={The Avengers: A Simple Recipe for Uniting Smaller Language Models to Challenge Proprietary Giants}, 
-      author={Yiqun Zhang and Hao Li and Chenxu Wang and Linyao Chen and Qiaosheng Zhang and Peng Ye and Shi Feng and Daling Wang and Zhen Wang and Xinrun Wang and Jia Xu and Lei Bai and Wanli Ouyang and Shuyue Hu},
-      year={2025},
-      eprint={2505.19797},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.19797}, 
-}
-```
+引用信息已为匿名评审删除。

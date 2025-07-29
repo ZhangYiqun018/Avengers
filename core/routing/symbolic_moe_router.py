@@ -105,7 +105,7 @@ class EmbeddingCache:
         base_url: str = "http://172.30.28.129:8000/v1",
         api_key: str = "sk-1234567890",
         model_name: str = "bge-m3",
-        cache_dir: str | os.PathLike = "/fs-computility/mabasic/zhangyiqun/Revengers/.cache",
+        cache_dir: str | os.PathLike = "/tmp/anonymous_cache",
         max_retries: int = 5,
         initial_delay: float = 1.0,
     ) -> None:
