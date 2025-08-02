@@ -1,8 +1,8 @@
 <div align="center">
-<img src="./assets/overall.png" alt="Method Overview" width="900">
+<img src="assets/overall.png" alt="Method Overview" width="900">
 </div>
 
-<h1 align="center">The Avengers: A Simple Routing-based Recipe for the Collective Intelligence of Smaller Language Models</h1>
+<h1 align="center">The Avengers: A Routing Recipe for Collective Intelligence in Language Models</h1>
 
 <div align="center">
 
@@ -14,7 +14,7 @@
 
 ## Abstract
 <div align="center">
-<img src="./assets/figure1.png" alt="Main Results" width="850">
+<img src="assets/figure1.png" alt="Main Results" width="850">
 <p><em><strong>Figure 1:</strong> Comparison of proprietary models with our method (the Avengers) across six representative
 benchmarks. Full results on all 15 benchmarks are reported in Table 2</em></p>
 </div>
@@ -32,7 +32,7 @@ As of May 2025, with 10 open-source models (～7B parameters each), the *Avenger
 - Comprehensive evaluation across 15 benchmarks covering 5 domains
 
 <div align="center">
-<img src="./assets/table1.png" alt="Main Results" width="850">
+<img src="assets/table1.png" alt="Main Results" width="850">
 <p><em><strong>Table 1:</strong> Methodological comparison between baseline methods and the Avengers</em></p>
 </div>
 
@@ -41,21 +41,21 @@ As of May 2025, with 10 open-source models (～7B parameters each), the *Avenger
 ## Results
 
 <div align="center">
-<img src="./assets/table2.png" alt="Main Result" width="850">
+<img src="assets/table2.png" alt="Main Result" width="850">
 <p><em><strong>Table 2:</strong> Main Results</em></p>
 </div>
 
 **Outstanding performance**: Using approximately **10 models with ~7B parameters each**, The Avengers achieves superior performance compared to GPT-4.1 on **10 out of 15 datasets**, while also surpassing GPT-4.1 in **average performance across all 15 datasets**. When compared with baseline router- and mixture-based methods, The Avengers consistently delivers the best results across benchmarks.
 
 <div align="center">
-<img src="./assets/table3.png" alt="OOD Results" width="850">
+<img src="assets/table3.png" alt="OOD Results" width="850">
 <p><em><strong>Table 3:</strong> Out-of-distribution results</em></p>
 </div>
 
 **Superior generalization**: Compared to routing-based methods, The Avengers demonstrates the **best out-of-distribution (OOD) performance** thanks to its training-free nature, which prevents overfitting to specific datasets and ensures robust generalization to unseen domains.
 
 <div align="center">
-<img src="./assets/table4.png" alt="Ablation Study" width="850">
+<img src="assets/table4.png" alt="Ablation Study" width="850">
 <p><em><strong>Table 4-6:</strong> Ablation studies.</em></p>
 </div>
 
@@ -63,11 +63,11 @@ As of May 2025, with 10 open-source models (～7B parameters each), the *Avenger
 <table border="0">
 <tr>
     <td>
-        <img src="./assets/figure2.png" alt="ablation" width="420">
+        <img src="assets/figure2.png" alt="ablation" width="420">
         <p><em><strong>Figure 2:</strong> Impact of selected models' number.</em></p>
     </td>
     <td>
-        <img src="./assets/figure3.png" alt="ablation" width="420">
+        <img src="assets/figure3.png" alt="ablation" width="420">
         <p><em><strong>Figure 3:</strong> Impact of cluster count K</em></p>
     </td>
 </tr>
