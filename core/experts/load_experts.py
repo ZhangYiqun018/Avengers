@@ -5,10 +5,8 @@ from loguru import logger
 from openai import OpenAI
 
 from config.config_loader import load_config
-import hishel, httpx
-import json, hashlib
-from typing import Optional
-from hishel._utils import normalized_url
+import httpx
+from core.cache import HttpCache
 
 @dataclass
 class Expert:
@@ -18,58 +16,25 @@ class Expert:
     description: str
     client: OpenAI
 
-def param_only_key(request: httpx.Request, body: Optional[bytes] = b"") -> str:
-    INTERESTED_FIELDS = {"model", "temperature", "top_p", "n", "messages"}
-
-    # 1) extract url path
-    full_url = normalized_url(request.url)        
-    url_obj  = httpx.URL(full_url)
-    encoded_url = (url_obj.raw_path or b"/")      
-    # 2) extract interested fields
-    try:
-        payload = json.loads(body or b"{}")
-    except json.JSONDecodeError:
-        payload = {}
-    filtered = {k: payload.get(k) for k in sorted(INTERESTED_FIELDS)}
-    encoded_body = json.dumps(
-        filtered, separators=(",", ":"), sort_keys=True, ensure_ascii=False
-    ).encode()
-    
-    # 3) generate key
-    key_parts = [request.method, encoded_url, encoded_body]
-
-    try:                                          # use blake2b-128
-        hasher = hashlib.blake2b(digest_size=16, usedforsecurity=False)
-    except (TypeError, ValueError, AttributeError):
-        hasher = hashlib.sha256(usedforsecurity=False)
-
-    for part in key_parts:
-        hasher.update(part)
-    return hasher.hexdigest()
-
-def init_http_cache(cache_dir: str):
-    storage = hishel.FileStorage(base_path=cache_dir)
-    base_transport = httpx.HTTPTransport()
-    controller = hishel.Controller(
-        cacheable_methods = ["GET", "POST"],
-        cacheable_status_codes=[200],
-        allow_stale=True,
-        force_cache=True,
-        key_generator=param_only_key
-    )
-    transport = hishel.CacheTransport(
-        storage=storage,
-        transport=base_transport,
-        controller=controller
-    )
-    return transport
-
 def load_experts(config: dict) -> List[Expert]:
     use_http_cache = config['experiments']['use_http_cache']
+    httpx_client = None
     if use_http_cache:
-        cache_dir = config['experiments']['cache_dir']
-        transport = init_http_cache(cache_dir)
-        httpx_client = httpx.Client(transport=transport)
+        # Prefer remote cache when configured; otherwise fall back to local file cache
+        remote_cfg = config['experiments'].get('remote_cache')
+        if remote_cfg:
+            http_cache = HttpCache.remote(
+                host=remote_cfg.get('host'),
+                port=int(remote_cfg.get('port', 6379)),
+                user=remote_cfg.get('user'),
+                password=remote_cfg.get('password'),
+                ttl=remote_cfg.get('ttl'),
+                database=remote_cfg.get('database'),
+            )
+        else:
+            cache_dir = config['experiments']['cache_dir']
+            http_cache = HttpCache.local(cache_dir)
+        httpx_client = http_cache.create_httpx_client()
         
     experts = []
     for model_config in config['experts']:

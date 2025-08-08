@@ -13,6 +13,7 @@ class DirectGenerator(BaseGenerator):
         self.temperature = self.config.get("temperature", 0.2)
         self.top_p = self.config.get("top_p", 1.0)
         self.top_k = self.config.get("top_k", NOT_GIVEN)
+        self.n = self.config.get("n", 1)
         
     # 定义重试日志记录函数
     def _log_retry(retry_state):
@@ -36,6 +37,7 @@ class DirectGenerator(BaseGenerator):
                 messages=[{"role": "user", "content": question}],
                 temperature=self.temperature,
                 top_p=self.top_p,
+                n=self.n,
                 timeout=500,
             )
             usage = response.usage

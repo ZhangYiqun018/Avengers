@@ -51,7 +51,7 @@ class MATH500Evaluator(BaseEvaluator):
         if self.mode == "test":
             # split data into train and test
             logger.warning(f"Split data into train and test for {self.task}")
-            split_data = data.train_test_split(test_size=0.3)
+            split_data = data.train_test_split(test_size=0.3, seed=self.seed)
             train_data = split_data["train"]
             data = split_data["test"]
             logger.info(f"Calibration data: {len(train_data)}")
