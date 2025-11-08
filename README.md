@@ -25,6 +25,9 @@ The *Avengers* is a simple recipe that effectively leverages the *collective int
 Remarkably, **with 10 open-source models (∼7B parameters each), the Avengers surpasses GPT-4o, 4.1, and 4.5 in average performance across 15 diverse datasets spanning mathematics, coding, logical reasoning, general knowledge, and affective tasks**. 
 As of May 2025, with 10 open-source models (～7B parameters each), the *Avengers* collectively outperforms GPT-4.1 (OpenAI’s flagship model released on April 14, 2025) on 9 out of 15 representative datasets.
 
+## What is New
+2025-11-08 	🎉 AAAI 2026 (Oral) — Our paper was accepted as an Oral presentation at AAAI 2026.
+
 ## Highlights
 
 - No neural network training, no hand-crafted prompts or system architecture design
