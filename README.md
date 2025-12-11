@@ -26,7 +26,9 @@ Remarkably, **with 10 open-source models (∼7B parameters each), the Avengers s
 As of May 2025, with 10 open-source models (～7B parameters each), the *Avengers* collectively outperforms GPT-4.1 (OpenAI’s flagship model released on April 14, 2025) on 9 out of 15 representative datasets.
 
 ## What is New
-2025-11-08 	🎉 AAAI 2026 (Oral) — Our paper was accepted as an Oral presentation at AAAI 2026.
+[2025-12-10] 🎉 OpenRouterBench - We have open source all data into OpenRouterBench ([huggingface](https://huggingface.co/datasets/NPULH/OpenRouterBench), [GitHub](https://github.com/ynulihao/OpenRouterBench))
+
+[2025-11-08] 🎉 AAAI 2026 (Oral) — Our paper was accepted as an Oral presentation at AAAI 2026.
 
 ## Highlights
 
